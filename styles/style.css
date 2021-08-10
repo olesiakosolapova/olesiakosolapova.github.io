@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body
+{
+    background: #bfc8fa;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* ЛОГОТИП */
+.logo
+{
+  position: absolute;
+  left: -5%;
+  top:-13%;
+  width: 95%;
+  height: auto;
+}
+
+/* ГЛАВНОЕ МЕНЮ */
+nav
+{
+    padding-left:0 ;
+    margin-left: 0;
+    text-align: center;
+}
+nav a
+{
+    text-decoration: none;
+    color: rgb(54, 51, 51);
+    position: relative;
+    line-height: 100px;
+    padding-left: 20px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition:.3s linear;
+}
+nav li
+{
+    display: inline;
+}
+
+/* ЦИТАТА НА ГЛАНОЙ СТРАНИЦЕ */
+.citation
+{
+    position:absolute;
+    text-align: center;
+    right:11%;
+    top:230px;
+    font-size: 200%;
+    color: rgb(78, 75, 75);  
+    line-height: 1.2;
+}
+
+/* КАРТИНКА НА ГЛАВНОЙ СТРАНИЦЕ */
+#portrait
+{
+  
+    position:absolute;
+    right:50%;
+    top:17%;
+}
+#pero
+{
+    position:absolute;
+    right: 0%;
+    top:62%;
+}
+
+/* БИОГРАФИЯ */
+p
+{
+    margin-right: 5%; 
+    margin-left: 5%; 
+    text-align:justify; 
+    text-indent: 1.5em; 
+    right: 1.5em;
+}
+p::first-letter 
+{
+  font-size: 130%; 
+}
+
+/* КНИГИ */
+.table_book1 {
+  
+  width: 100%;
+  margin: 0 auto 0 auto;
+ }
+ .table_book1 td 
+ {
+  text-align: center;
+  padding: 10px; 
+ }
+
+ .table_book2 {
+  
+  width: 100%;
+  margin: -1% auto 0 auto;
+ }
+ .table_book2 td 
+ {
+  text-align: center;
+  padding: 10px; 
+ }
+
+/* СТРАНИЦА ЕКРАНИЗАЦИИ */
+#table_movie {
+  
+  width: 100%;
+  margin: 1% auto 0 auto;
+ }
+ #table_movie td 
+ {
+  text-align: center;
+  padding: 10px; 
+ }
+
+ /* СТИЛИ ДЛЯ КНОПОК */
+ button {
+  color: #232323;
+  background: transparent;
+  border: 1px solid #232323;
+  position: relative;
+  font-size: 14px;
+  letter-spacing: .3em;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+button:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  background: #a59fff;
+  z-index: -1;
+  transition: .25s ease;
+  transform: translate(0, 0);
+}
+button:hover:before {
+  transform: translate(4px, 4px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*СТИЛИ ДЛЯ КОММЕНТАРИЕВ НА СТРАНИЦЕ КНИГИ */
+.com 
+{
+width: 800px;
+background: #afb1ff;
+margin: -36% 1% 0 auto;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+text-align: left;
+border-collapse: separate;
+border-spacing: 5px;
+color: #656665;
+border: 16px solid #ECE9E0;
+border-radius: 20px;
+}
+
+.com th {
+  font-size: 18px;
+  padding: 10px;
+  }
+.com td {
+  background: #FBCFDF;
+  padding: 10px;
+  }
+
+ /* СТИЛИ ДЛЯ ФОРМЫ ОТПРАВКИ */
+.postcard {
+  max-width: 350px;
+  margin: 0 5% 0;
+  padding: 20px;
+  background: #afb1ff;
+  border: 10px solid transparent;
+  border-image: 10 repeating-linear-gradient(135deg, #7a20c4, #bf20c4 10px, transparent 10px, transparent 20px, #FBCFDF 20px, #FBCFDF 30px, transparent 30px, transparent 40px);
+  font-family: 'Playfair Display';
+  color: #605756;
+}
+.form-row {
+  margin-bottom: 15px;
+}
+.form-row input[type="text"], .form-row input[type="email"], .form-row textarea {
+  width: 100%;
+  padding: 0 10px;
+  line-height: 35px;
+  border-width: 0;
+  outline: none;
+  background: transparent url(https://html5book.ru/wp-content/uploads/2016/12/bg-form.png) bottom left repeat-x;
+  background-size: 8px 35px;
+  font-family: 'Playfair Display';
+}
+.form-row textarea {
+  background-attachment: local;
+  background-repeat: repeat;
+  resize: none;
+}
+.form-row input[type="submit"] {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: #d37cf6;
+  border-width: 0;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Playfair Display';
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fffdee;
+  text-transform: uppercase;
+  transition: 1s cubic-bezier(.165, .84, .44, 1);
+}
+.form-row input[type=submit]:hover {
+  background: #7728d1;
+}
+
+
+/* НИЖНИЙ КОЛОНТИТУЛ */
+footer 
+  {
+    position: fixed;
+    right: 0; bottom: 0; 
+    padding: 10px; 
+    color: rgb(78, 75, 75); 
+  }
+
+    /* 404 */
+  * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+      
+      #notfound 
+      {
+        position: relative;
+        height: 100vh;
+      }
+      
+      #notfound .notfound {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+      }
+      
+      .notfound {
+        max-width: 520px;
+        width: 100%;
+        line-height: 1.4;
+        text-align: center;
+      }
+      
+      .notfound .notfound-404 {
+        position: relative;
+        height: 200px;
+        margin: 0px auto 20px;
+        z-index: -1;
+      }
+      
+      .notfound .notfound-404 h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 236px;
+        font-weight: 200;
+        margin: 0px;
+        color: #211b19;
+        text-transform: uppercase;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+      }
+      
+      .notfound .notfound-404 h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #211b19;
+        background: #fff;
+        padding: 10px 5px;
+        margin: auto;
+        display: inline-block;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+      }
+      
+      .notfound a {
+        font-family: 'Montserrat', sans-serif;
+        display: inline-block;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 13px 23px;
+        background: #884ed4;
+        font-size: 18px;
+        -webkit-transition: 0.2s all;
+        transition: 0.2s all;
+      }
+      
+      .notfound a:hover {
+        color: #6440b8;
+        background: #211b19;
+      }
+      
+      @media only screen and (max-width: 767px) {
+        .notfound .notfound-404 h1 {
+          font-size: 148px;
+        }
+      }
+      
+      @media only screen and (max-width: 480px) {
+        .notfound .notfound-404 {
+          height: 148px;
+          margin: 0px auto 10px;
+        }
+        .notfound .notfound-404 h1 {
+          font-size: 86px;
+        }
+        .notfound .notfound-404 h2 {
+          font-size: 16px;
+        }
+        .notfound a {
+          padding: 7px 15px;
+          font-size: 14px;
+        }
+      }
